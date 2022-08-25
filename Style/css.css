@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+element{
+    --left-line-bg: #F5F7F9;
+    --bg: #ffffff;
+}
+body{
+    margin: 0;
+    font-family: "Montserrat";
+}   
+a, a:hover{
+    text-decoration: none;
+    color: #000;
+}
+#mynote{
+    margin-top: 150px;
+    text-align: center;
+}
+.centerBlock{
+    display: flex;
+    width: 560px;
+    margin-left: calc(50% - 280px);
+}
+.ButtMenu{
+    margin: 0 5px;
+    width: 270px;
+    height: 60px;    
+    box-shadow: 0px 0px 8px rgba(154, 48, 237, 0.65);
+    border-radius: 20px;
+}
+.ButtMenuText{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 21px;
+    font-weight: 600;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0;
+
+}
+@media (max-width:769px){
+    .centerBlock{display: block; width: 80%; margin-left: 10%;}
+    #mynote{margin-top: 50px;}
+    .ButtMenu{margin: 5px 0; width: 80%; height: 50px; }
+    .ButtMenuText{box-shadow: 0px 0px 8px rgba(154, 48, 237, 0.65);
+        border-radius: 20px; padding: 21px 0;}
+}
+/*JavaScript*/
+.butLeft{
+    height: 22px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px rgba(154, 48, 237, 0.65);
+    width: max-content;
+    border-radius: 5px;
+}
+.centerMenu{
+    width: 560px;
+    margin-left: calc(50% - 280px);
+    box-shadow: 0px 0px 8px rgba(154, 48, 237, 0.65);
+    border-radius: 20px;
+    padding: 5px;
+}
+.centerMenu a, .centerMenu ul{
+    list-style: none;
+    margin-left: -10px;
+    color: coral;
+    text-decoration: underline;
+}
+.centerMenuP{
+    display: flex;
+}
+@media (max-width:769px){
+    .centerMenu{width: 80%; margin-left: 10%;}
+}
+/*Note*/
+.butLeft2{
+    height: 22px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px rgba(154, 48, 237, 0.65);
+    width: max-content;
+    border-radius: 5px;
+    position: fixed;
+    background-color: #fff;
+}
+.h1{text-align: center;}
+.h2{text-align: center;}
+.h3{margin-left:25px; font-size: 21px; margin-bottom: -10px;}
+.h4{ font-size: 19px;} 
+.h5{font-size: 18px; margin-top: -10px;}
+.h4, .h5, .h6, .text{margin-left: 10px;}
+.text{margin-top: -10px; text-indent: 15px;}
+.content{max-width: 750px; margin-left: calc(50% - 375px);}
+.alert_i{
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+}
+.alert_i{border: 1px solid #5459ff;}
+.alert_i_bg{background-color: #5459ff; height: 100%; width: 2px; border-radius: 1px;color: #5459ff;}
+.code{
+    display: inline;
+    font-family: "Source Code Pro";
+    border-radius: 7px;
+    margin-left: 3px;
+    background-color: #eaeaea;
+}
+.alert{
+    border: 1px #eaeaea solid;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+}
+@media (max-width:769px){
+    .content{width: 100vw; margin-left: 0;}
+}
