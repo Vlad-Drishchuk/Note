@@ -87,9 +87,8 @@ a, a:hover{
 .h2{text-align: center;}
 .h3{margin-left:25px; font-size: 21px; margin-bottom: -10px;}
 .h4{ font-size: 19px; text-align: center;} 
-.h5{font-size: 16px; margin-top: -10px;}
-.h4, .h5, .h6, .text{margin-left: 10px;}
-.text{margin-top: -10px; text-indent: 15px;}
+.h5{font-size: 16px; margin-top: 15px;}
+.h4, .h5, .h6, .text{margin-left: 10px; }
 .content{max-width: 750px; margin-left: calc(50% - 375px);}
 .code{
     display: inline;
@@ -115,6 +114,9 @@ a, a:hover{
     margin-left: 14px;
     margin-right: 10px;
 }
+.alert-text ul{
+    margin-top: 5px;
+}
 @media (max-width:769px){
-    .content{width: 100vw; margin-left: 0;}
+    .content{width: 95vw; margin-left: 2.5vw;}
 }
