@@ -1,17 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-element{
+:root{
     --left-line-bg: #F5F7F9;
-    --bg: #ffffff;
+    --bg: rgb(24, 28, 31);
+    --bg-alert:rgb(34, 39, 46);
+    --color: rgb(234, 242, 247);
 }
 body{
     margin: 0;
+    background: var(--bg);
     font-family: "Inter";
-}   
+    color: var(--color);
+}
+.main{margin-left: 10px;padding-top: 10px; height: 24px; height: max-content;}
+.main-a{font-size: 16px; line-height:16px;}
+.main-img{width: 16px; line-height: 24px; margin-top: 8px; display: inline;}
 a, a:hover{
     text-decoration: none;
-    color: #000;
+    color: coral;
 }
 #mynote{
     margin-top: 150px;
@@ -36,6 +43,7 @@ a, a:hover{
     font-weight: 600;
     box-shadow: 0px 0px 0px;
     border-radius: 0;
+    color: var(--color);
 
 }
 @media (max-width:769px){
@@ -81,15 +89,14 @@ a, a:hover{
     box-shadow: 0px 0px 8px rgba(154, 48, 237, 0.65);
     width: max-content;
     border-radius: 5px;
-    background-color: #fff;
 }
-.h1{text-align: center;}
-.h2{text-align: center;}
-.h3{margin-left:25px; font-size: 21px; margin-bottom: -10px;}
-.h4{ font-size: 19px; text-align: center;} 
-.h5{font-size: 16px; margin-top: 15px;}
+.h1{text-align: left; margin-left: 10px;}
+.h2{text-align: left; margin-left: 10px;}
+.h3{color: var(--color); font-size: 21px; margin-bottom: -10px; margin-left: 10px;}
 .h4, .h5, .h6, .text{margin-left: 10px; }
-.content{max-width: 750px; margin-left: calc(50% - 375px);}
+.text{font-size: 14px;}
+.text, .alert-text, .alert-text li, li{line-height: 24px;}
+.content{max-width: 750px; margin-left: calc(50% - 375px)}
 .code{
     display: inline;
     font-family: "Source Code Pro";
@@ -107,7 +114,7 @@ a, a:hover{
     margin: 10px;
     display: flex;
     box-shadow: 0px 0px 2px rgba(52, 109, 219, 0.65);
-
+    background-color: var(--bg-alert);
 }
 .alert_img{
     width: 48px;
