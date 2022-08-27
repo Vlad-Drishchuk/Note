@@ -6,6 +6,7 @@
     --bg: rgb(24, 28, 31);
     --bg-alert:rgb(34, 39, 46);
     --color: rgb(234, 242, 247);
+    --color-mini: #eaeaea;
 }
 body{
     margin: 0;
@@ -123,6 +124,25 @@ a, a:hover{
 }
 .alert-text ul{
     margin-top: 5px;
+}
+.mini{
+    display: inline;
+    padding: 2px;
+    background-color: var(--color-mini);
+    border-radius: 2px;
+    font-family: "Source Code Pro";
+    color: black;
+}
+.link_thems:hover .h3{
+    color: coral;
+    text-decoration: underline;
+}
+.Li-content a{color: var(--color);}
+.Li-content a:hover{color: coral;}
+.list-c{
+    border: 1px solid #eaeaea;
+    background-color: var(--bg-alert);
+    border-radius: 5px;
 }
 @media (max-width:769px){
     .content{width: 95vw; margin-left: 2.5vw;}
